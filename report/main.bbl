@@ -1,0 +1,11 @@
+\begin{thebibliography}{1}
+
+\bibitem{DBLP:journals/corr/RonnebergerFB15}
+O.~Ronneberger, P.~Fischer, and T.~Brox, ``U-net: Convolutional networks for
+  biomedical image segmentation,'' {\em CoRR}, vol.~abs/1505.04597, 2015.
+
+\bibitem{Ruder2016AnOO}
+S.~Ruder, ``An overview of gradient descent optimization algorithms,'' {\em
+  CoRR}, vol.~abs/1609.04747, 2016.
+
+\end{thebibliography}
