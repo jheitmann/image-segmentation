@@ -55,12 +55,12 @@ def unet(input_size, pretrained_weights=None, seed=common.SEED, unif_init=True):
     pool3 = MaxPooling2D(pool_size=(2, 2))(conv3)
     conv4 = Conv2D(512, 3, activation='relu', padding='same', kernel_initializer=kinit)(pool3)
     conv4 = Conv2D(512, 3, activation='relu', padding='same', kernel_initializer=kinit)(conv4)
-    drop4 = Dropout(0.5)(conv4)
+    drop4 = Dropout(rate=0.5, seed=seed)(conv4)
     pool4 = MaxPooling2D(pool_size=(2, 2))(drop4)
 
     conv5 = Conv2D(1024, 3, activation='relu', padding='same', kernel_initializer=kinit)(pool4)
     conv5 = Conv2D(1024, 3, activation='relu', padding='same', kernel_initializer=kinit)(conv5)
-    drop5 = Dropout(0.5)(conv5)
+    drop5 = Dropout(rate=0.5, seed=seed)(conv5)
 
     up6 = Conv2D(512, 2, activation='relu', padding='same', kernel_initializer=kinit)(UpSampling2D(size=(2,2))(drop5))
     merge6 = concatenate([drop4,up6], axis=3)
