@@ -2,8 +2,8 @@
 Machine Learning Project 2
 =====
 
-Julien Niklas Heitmann
-Philipp Khlebnikov
+Julien Niklas Heitmann  
+Philipp Khlebnikov  
 Louis Gabriel Jean Landelle
 
 This project uses a U-Net architecture to predict a segmentation problem on a small dataset of satellite images, segmenting roads from non-roads areas. It is built with Keras on a TensorFlow back-end. Our best model yields a F1 score of 0.888 on the testing dataset. This README describes the steps to reproduce our results, and a general project structure overview.
